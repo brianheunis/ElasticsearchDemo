@@ -1,0 +1,19 @@
+
+<ion-content text-center padding center  margin-top>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Username" type="text" [(ngModel)]="username" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Password " type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-row text-center>
+    <ion-button text-center (click)="login()">Login</ion-button>
+    <ion-button text-center color="light" (click)="register()">Register</ion-button>
+  </ion-row>
+  <br>
+  <ion-row>
+    <a routerLink="/about">Go to about page</a>
+  </ion-row>
+</ion-content>

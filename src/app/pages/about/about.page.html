@@ -1,0 +1,17 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>About</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of items">
+    <ion-card-header>
+      <ion-card-subtitle>{{item.name}}</ion-card-subtitle>
+      <ion-card-title>{{item.playcount}}</ion-card-title>
+    </ion-card-header>
+    <img [src]="item.image[2]['#text']">
+
+  </ion-card>
+</ion-content>
